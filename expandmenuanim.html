@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link href="expandmenuanim-style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Expand Menu Animation</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        $(document).ready(function() {
+            $("nav").click(function() {
+                $(this).toggleClass("_expand");
+            });
+        });
+    </script>
+</body>
+</html>
